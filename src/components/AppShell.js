@@ -41,16 +41,6 @@ class AppShell extends React.Component {
                                 Home
                             </Link>
                         </MenuItem>
-                        <MenuItem onClick={this.handleDrawerToggle}>
-                            <Link component={RouterLink} to="/texts">
-                                Texts
-                            </Link>
-                        </MenuItem>
-                        <MenuItem onClick={this.handleDrawerToggle}>
-                            <Link component={RouterLink} to="/words">
-                                Words
-                            </Link>
-                        </MenuItem>
                     </Drawer>
                 </div>
                 <div id="content" style={{ margin: 'auto', marginTop: '20px' }}>

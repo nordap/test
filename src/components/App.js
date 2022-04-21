@@ -1,4 +1,7 @@
 import React from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import AppShell from './AppShell';
+import Home from './Home';
 
 class App extends React.Component {
     render() {
@@ -6,7 +9,9 @@ class App extends React.Component {
             <Router>
                 <AppShell>
                     <div>
-                        <Route exact path="/" component={Home} />
+                        <Routes>
+                            <Route exact path="/" element={<Home />}></Route>
+                        </Routes>
                     </div>
                 </AppShell>
             </Router>
